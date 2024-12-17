@@ -1,26 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.svg" />
-    <HelloWorld msg="Hello Vue 2 + Vite" />
+    <Header></Header>
+    <div class="content">
+      <RouterView />
+    </div>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Footer from "./components/shared/Footer.vue";
+import Header from "./components/shared/Header.vue";
 export default {
   components: {
-    HelloWorld,
+    Footer,
+    Header,
   },
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
